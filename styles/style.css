@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --primary-color: #0A3871;
+    --secondary-color: #495057;
+    --background-color: #F3F5FC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    height: 100vh;
+    width: 100%;
+}
+
+.contenedor__principal{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    padding: 40px;
+    gap: 80px;
+}
+
+.logo{
+    height: 48px;
+}
+
+.header{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    gap: 80px;
+}
+
+.contenedor__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.texto{
+    margin-top: 128px;
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: auto;
+    resize: none;
+    height: 60%;
+}
+
+.contenedor__info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.icono__info{
+    width: 16px;
+}
+
+.texto__info{
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+}
+
+.contenedor__botones{
+    display: flex;
+    margin-bottom: 32px;
+    gap: 24px;
+}
+
+.botones{
+    border-radius: 24px;
+    padding: 24px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.botones:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.02);
+}
+
+.botones:active{
+    transform: translateY(1px);
+}
+
+.boton__encriptar{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-style: none;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.boton__desencriptar{
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.contenedor__texto__encriptado{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    gap: 32px;
+}
+
+.texto__encriptado{
+    display: none;
+    resize: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border: none;
+    margin-bottom: auto;
+    width: 100%;
+    height: 80%;
+}
+
+.imagen__ningun__mensaje{
+    width: 80%;
+    height: 40%;
+    background-image: url('../assets/persona-buscando.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.texto__ningun__mensaje{
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.titulo__ningun__mensaje{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.parrafo__ningun__mensaje{
+    font-size: 1rem;
+}
+
+.boton__copiar{
+    margin-top: auto;
+    width: 100%;
+    display: none;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    background-color: white;
+}
+
+.footer{
+    display: flex;
+    padding: 16px 0;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    justify-content: center;
+    width: 100%;
+    border-top: solid 1px var(--primary-color);
+}
+
+@media (max-width: 768px){
+    body{
+        height: auto;
+    }
+    .contenedor__principal{
+        flex-direction: column;
+    }
+    .logo{
+        width: 32px;
+    }
+    .main{
+        flex-direction: column;
+        gap: 0;
+    }
+    .texto{
+        min-height: 200px;
+        margin-top: 0;
+    }
+    .contenedor__texto__encriptado{
+        width: auto;
+    }
+    .imagen__ningun__mensaje{
+        display: none !important;
+    }
+    .texto__encriptado{
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 375px){
+    .contenedor__botones{
+        flex-direction: column;        
+    }
+    .botones{
+        width: auto;
+    }
+    .boton__copiar{
+        width: 100%;
+    }
+}

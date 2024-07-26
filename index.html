@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="contenedor__principal">
+            <header class="header">
+                <img class="logo" src="assets/logo-alura.svg" alt="logo de alura">
+            </header>
+            <main class="main">
+                <div class="contenedor__texto">
+                    <textarea name="texto" id="texto" class="texto" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="contenedor__info">
+                        <img class="icono__info" src="./assets/icono-atencion.svg" alt="icono atención">
+                        <p class="texto__info">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="contenedor__botones">
+                        <button id="boton__encriptar" class="botones boton__encriptar" onclick="encriptarTexto();">Encriptar</button>
+                        <button id="boton__desencriptar" class="botones boton__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="contenedor__texto__encriptado">
+                    <textarea name="texto__encriptado" id="texto__encriptado" class="texto__encriptado" readonly></textarea>
+                    <div id="imagen__ningun__mensaje" class="imagen__ningun__mensaje" ></div>
+                    <div id="texto__ningun__mensaje" class="texto__ningun__mensaje">
+                        <p class="titulo__ningun__mensaje">Ningún mensaje fue encontrado</p>
+                        <p class="parrafo__ningun__mensaje">Ingrese el texto que desee encriptar o desencriptar</p>
+                    </div>
+                    <button id="boton__copiar" class="botones boton__copiar" onclick="copiarTexto();">Copiar</button>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <p>Desarrollado por Gonzalo Alvarado</p>
+        </footer>
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>
