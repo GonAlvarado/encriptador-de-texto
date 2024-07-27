@@ -6,6 +6,8 @@ Por otra parte, cuenta con la funcionalidad de desencriptación de texto, hacien
 
 Además, con un solo clic en su botón de copiar texto, permite que el resultado obtenido de la encriptación sea reutilizado por los usuarios de manera ágil.</p>
 
+<img src="https://github.com/user-attachments/assets/50919f94-64ef-4372-9e65-94a904276896" width="100" height="100" />
+
 ## Tecnologías utilizadas
 * HTML
 * CSS
